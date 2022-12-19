@@ -1,0 +1,14 @@
+.btn {
+    padding: 10px 32px;
+    display: block;
+
+    font-family: "Roboto", sans-serif;
+    @include font(16, 700, 1.88, 0.06);
+
+    color: #fff;
+    background-color: var(--secondary-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+
+}
