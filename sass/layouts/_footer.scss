@@ -2,27 +2,85 @@
     background-color: #2F303A;
     padding: 60px 0;
 
+
 & .container {
-            display: flex;
+
+            @media screen and (min-width:1200px) {
+                display: flex;
+            }
+
         }
+    }
+.footer--logo {
+display: flex;
+justify-content: center;
+
+@media screen and (min-width: 1200px) {
+    justify-content: start;
 }
+}
+
 
 .logo--light {
     color: #fff;
 }
 
+
+.footer-left-soc-wrap {
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+
+            }
+}
+
+
+.footer-left {
+
+    @media screen and (min-width: 768px) {
+        margin-left: 76px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+    }
+
+}
+
+
 .footer-contact {
     list-style: none;
     max-width: 231px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0px;
+
+    }
+
 
 &__item {
         margin-bottom: 9px;
         @include font(14, null, 1.71, 0.03);
         color: rgba(255, 255, 255, 0.6);
+
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 1200px) {
+            justify-content: start;
+        }
+        
+
     }
 
 &__link {
     color: rgba(255, 255, 255, 0.6);
+    @include font(16, null, 1.14, 0.03);
+
     }
 }
 
@@ -36,8 +94,16 @@
 
 
 .footer-soc {
-    margin-left: 70px;
-    margin-top: 12px;
+
+
+    @media screen and (min-width: 768px) {
+        margin-right: 89px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 93px;
+        padding-top: 12px;
+    }
 
 &__title {
         margin-bottom: 20px;
@@ -46,6 +112,14 @@
         text-transform: uppercase;
         color: #FFFFFF;
         font-style: normal;
+
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 1200px) {
+            justify-content: start;
+        }
+       
     }
 }
 
@@ -64,24 +138,49 @@
 }
 
 .footer-subscribe {
-    margin-left: 93px;
-    margin-top: 12px;
+
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 12px;
+    }
 
 &__title {
         margin-bottom: 20px;
+        margin-top: 60px;
         @include font(14, null, 16px, 0.03);
 
         text-transform: uppercase;
         color: #FFFFFF;
+
+        display: flex;
+        justify-content: center;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 0;;
+        }
+
+        @media screen and (min-width: 1200px) {
+            justify-content: start;
+        }
     }
 }
 
 
 .footer-form {
-    display: flex;
+    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+    }
+ 
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        flex-direction: row;
+    }
 
 &__input {
-        width: 358px;
+        
         background-color: transparent;
         color: rgba(255, 255, 255, 0.6);
         border: 1px solid rgba(255, 255, 255, 0.3);
@@ -91,6 +190,20 @@
         font-size: 16px;
         line-height: 20px;
         letter-spacing: 0.03em;
+        
+        width: 100%;
+        margin-bottom: 20px;
+        height: 50px;
+
+        @media screen and (min-width: 768px) {
+            max-width: 450px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 358px;
+        }
     }
 
 &__icon {
@@ -107,5 +220,12 @@
     margin-left: 12px;
     display: flex;
     align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 1200px) {
+        height: 50px;
+        margin-left: 12px;
+    }
 }
 

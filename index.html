@@ -12,12 +12,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <section class="header">
         <div class="container">
         <a href="./index.html" class="logo header__logo link">Web<span class="logo--black">Studio</span> </a>
@@ -49,9 +49,9 @@
         </div>
         
         </section>
-    </header>
+    </header> -->
     <main>
-        <section class="hero">
+    <section class="hero">
             <div class="container">
             <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
             <button class="btn btn-hero" type="button" data-modal-open>Замовити послугу</button>
@@ -127,7 +127,14 @@
             <h2 class="team__title title">Наша команда</h2>
             <ul class="team__list list">
                 <li class="team__item">
-                    <img src="./images/img.jpg" alt="ігор демяненко" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/img1.jpg 1x, ./images/img1-x2.jpg 2x" media="(min-width:1200px)"/>
+                        <source srcset="./images/tab1-x1.jpg 1x, ./images/tab1-x2.jpg 2x" media="(min-width:768px)"/>
+                        <source srcset="./images/mob1-x1.jpg 1x, ./images/mob1-x2.jpg 2x" media="(min-width:480px)" />
+                    <img srcset="./images/img1.jpg 1x, ./images/img1-x2.jpg 2x" src="./images/img1.jpg" alt="ігор демяненко" width="270"
+                        height="260" class="team__image">
+                    </picture>
+
                     <div class="team-card">
                     <h3 class="team-card__title">Ігор Дем'яненко</h3>
                     <p class="team-card__label">Product Designer</p>
@@ -157,7 +164,13 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img1.jpg" alt="ольга рєпіна" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/img2.jpg 1x, ./images/img2-x2.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/tab2-x1.jpg 1x, ./images/tab2-x2.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/mob2-x1.jpg 1x, ./images/mob2-x2.jpg 2x" media="(min-width:480px)" />
+                    <img srcset="./images/img2.jpg 1x, ./images/img2-x2.jpg 2x," src="./images/img2.jpg" alt="ольга рєпіна" width="270"
+                        height="260" class="team__image">
+                    </picture>
                     <div class="team-card">
                     <h3 class="team-card__title">Ольга Рєпіна</h3>
                     <p class="team-card__label">Frontend Developer</p>
@@ -187,7 +200,13 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img3.jpg" alt="микола тарасов" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/img3.jpg 1x, ./images/img3-x2.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/tab3-x1.jpg 1x, ./images/tab3-x2.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/mob3-x1.jpg 1x, ./images/mob3-x2.jpg 2x" media="(min-width:480px)" />
+                    <img srcset="./images/img3.jpg 1x, ./images/img3-x2.jpg 2x," src="./images/img3.jpg" alt="микола тарасов" width="270"
+                        height="260" class="team__image">
+                    </picture>
                     <div class="team-card">
                     <h3 class="team-card__title">Микола Тарасов</h3>
                     <p class="team-card__label">Marketing</p>
@@ -217,7 +236,13 @@
                     </div>
                 </li>
                 <li class="team__item">
-                    <img src="./images/img4.jpg" alt="Михайло Єрмаков" width="270" height="260">
+                    <picture>
+                        <source srcset="./images/img4.jpg 1x, ./images/img4-x2.jpg 2x" media="(min-width:1200px)" />
+                        <source srcset="./images/tab4-x1.jpg 1x, ./images/tab4-x2.jpg 2x" media="(min-width:768px)" />
+                        <source srcset="./images/mob4-x1.jpg 1x, ./images/mob4-x2.jpg 2x" media="(min-width:480px)" />
+                    <img srcset="./images/img4.jpg 1x, ./images/img4-x2.jpg 2x," src="./images/img4.jpg" alt="Михайло Єрмаков" width="270"
+                        height="260" class="team__image">
+                    </picture>
                     <div class="team-card">
                     <h3 class="team-card__title">Михайло Єрмаков</h3>
                     <p class="team-card__label">UI Designer</p>
@@ -289,16 +314,19 @@
             </div>
         </section>
     </main>
-     <footer class="footer">
+    <footer class="footer">
         <div class="container">
+            <div class="footer-left-soc-wrap">
             <div class="footer-left">
+                <div class="footer--logo">
             <a class="logo link" href="./index.html">Web</span><span class="logo--light">Studio</span></a>
+                </div>
         
             <ul class="footer-contact list">
                 <li class="footer-contact__item">
                     <address class="footer-address">м. Київ, пр-т Лесі Українки, 26</address>
                 </li>
-                <li class="footer-contact__item"><a class="footer-contact__link link" href="mailto:info@devstudio">info@devstudio</a></li>
+                <li class="footer-contact__item"><a class="footer-contact__link link" href="mailto:info@devstudio">info@devstudio.com</a></li>
                 <li class="footer-contact__item"><a class="footer-contact__link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
             </div>
@@ -334,6 +362,7 @@
                     </a>
                 </li>
             </ul>
+            </div>
             </div>
             <div class="footer-subscribe">
                 <h2 class="footer-subscribe__title">підпишіться на розсилку</h2>

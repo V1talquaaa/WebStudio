@@ -16,7 +16,7 @@
 .logo {
     display: block;
     font-family: raleway, sans-serif;
-    @include font(26px, 700, 1.19, null);
+    @include font(26, 700, 1.19, null);
     color: var(--secondary-color);
 
     &--black {

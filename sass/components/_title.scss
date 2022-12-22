@@ -1,5 +1,5 @@
 .title {
-    @include font(36, null, 1.17, 0.03)
+    @include font(36, null, 1.17, 0.03);
     
     text-align: center;
     color: var(--main-color);

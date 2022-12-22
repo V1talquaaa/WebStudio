@@ -1,10 +1,15 @@
 .services {
-    padding: 94px 0;
-
-&__title {
-        margin-bottom: 50px;
-
+    
+    @media screen and (max-width: 1199px) {
+        display: none;
     }
+
+        padding: 94px 0;
+}
+
+.services__title {
+    margin-bottom: 50px;
+
 }
 
 .lower-overlay {
@@ -21,7 +26,7 @@
 &__label {
     position: absolute;
     display: inline-block;
-    @include font(14, null, 1.14, 0.03)
+    @include font(14, null, 1.14, 0.03);
     height: 70px;
     width: 100%;
     text-align: center;
