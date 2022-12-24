@@ -165,22 +165,23 @@ img {
 }
 
 .nav-all {
-  display: none;
+  visibility: hidden;
+  display: flex;
   align-items: center;
 }
 @media screen and (min-width: 768px) {
   .nav-all {
-    display: flex;
+    visibility: visible;
   }
 }
 
 .contacts-margin {
-  display: none;
+  visibility: hidden;
   margin-left: auto;
 }
 @media screen and (min-width: 768px) {
   .contacts-margin {
-    display: flex;
+    visibility: visible;
   }
 }
 
