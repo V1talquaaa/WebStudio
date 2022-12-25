@@ -10,13 +10,13 @@
     border-bottom: 1px solid #ECECEC;
 
     & .container {
-            display: flex;
-            align-items: center;
-        }
+        display: flex;
+        align-items: center;
+    }
 
     &__logo {
-            margin-right: 93px;
-        }
+        margin-right: 93px;
+    }
 }
 
 .logo {
@@ -26,8 +26,8 @@
     color: var(--secondary-color);
 
     &--black {
-            color: #000000;
-        }
+        color: #000000;
+    }
 }
 
 .mob-menu-btn {
@@ -44,6 +44,7 @@
 }
 
 .mob-menu {
+    position: fixed;
     padding: 48px 83px 48px 40px;
     width: 100px;
     height: 100px;
@@ -90,7 +91,7 @@
 .mob-menu__link {}
 
 
-.contacts {}
+
 
 .contacts--mobile {
     display: block;
@@ -202,23 +203,23 @@
     align-items: baseline;
 
     &__item {
-            display: block;
-            margin-left: 10px;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            @include font(14, 500, 1.14, 0.02);
-    
-        }
+        display: block;
+        margin-left: 10px;
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        @include font(14, 500, 1.14, 0.02);
+
+    }
 
 
-        @media screen and (min-width: 768px) {
-            display: block;
-            margin-right: auto;
-            
-        }
+    @media screen and (min-width: 768px) {
+        display: block;
+        margin-right: auto;
 
-        @media screen and (min-width: 1200px) {
-            display: flex;
-        }
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .contacts__link {
@@ -226,13 +227,13 @@
 
     &:hover,
     &:focus {
-            color: var(--secondary-color);
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-        }
+        color: var(--secondary-color);
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-        @media screen and (min-width: 768px) {
-            @include font(12, 500, 1.17, 0.02);
-        }
+    @media screen and (min-width: 768px) {
+        @include font(12, 500, 1.17, 0.02);
+    }
 }
 
 .contacts-wrap {
@@ -248,6 +249,3 @@
     fill: currentColor;
     margin-right: 10px;
 }
-
-
-
