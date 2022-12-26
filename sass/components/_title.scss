@@ -1,6 +1,10 @@
 .title {
-    @include font(36, null, 1.17, 0.03);
+    @include font(28, null, 1.18, 0.03);
     
     text-align: center;
     color: var(--main-color);
+
+    @media screen and (min-width: 1200px) {
+        @include font(36, null, 1.18, 0.03);
+    }
 }
