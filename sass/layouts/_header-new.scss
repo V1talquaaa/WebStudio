@@ -77,7 +77,6 @@
 
 }
 
-
 .mob-menu__item {
     margin-bottom: 32px;
 
@@ -89,6 +88,10 @@
     &:focus {
         color: var(--secondary-color);
     }
+}
+
+.mob-menu__link.current {
+    color: var(--secondary-color);
 }
 
 

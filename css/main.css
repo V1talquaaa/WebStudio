@@ -192,6 +192,10 @@ img {
   color: var(--secondary-color);
 }
 
+.mob-menu__link.current {
+  color: var(--secondary-color);
+}
+
 .contacts--mobile {
   display: flex;
   margin-top: 306px;
